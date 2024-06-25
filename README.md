@@ -11,6 +11,7 @@ MikroTik scripts are written in MikroTik's scripting language, which allows for 
 This repository contains individual `.rsc` files, each implementing a specific functionality or automation task. Here is a brief overview of the current scripts available:
 
 - **auto-route-by-ping.rsc**: Automatically sets the route to the best interface based on ping response times from a list of addresses.
+- **auto-route-by-ping-address-lists.rsc**: Automatically sets the route to the best interface based on ping response times from a list of addresses stored in address lists.
 
 ## Getting Started
 
