@@ -19,7 +19,7 @@
     :local address [/ip firewall address-list get $i address]
     :if ([:typeof [:toip $address]] = "ip") do={
         :local name [/ip firewall address-list get $i comment]
-        :local tagComment ("auto-" . $name)
+        :local tagComment ("auto-" . $name . "-" . $address)
         :local existTagged [/ip firewall address-list find comment=$tagComment]
 
         :local picked ($mainInterface)
